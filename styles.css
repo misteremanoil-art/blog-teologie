@@ -220,4 +220,16 @@ section {
 .post-content p {
   margin-bottom: 1.5rem;
 }
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--accent);
+  font-weight: 600;
+}
 
