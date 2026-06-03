@@ -201,3 +201,23 @@ section {
 .social-links a:hover {
   color: var(--text);
 }
+/* Stiluri pentru imagini */
+.article-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  border: 1px solid var(--border);
+}
+
+.post-content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #d1d5db; /* Un gri puțin mai deschis pentru citit ușor */
+}
+
+.post-content p {
+  margin-bottom: 1.5rem;
+}
+
