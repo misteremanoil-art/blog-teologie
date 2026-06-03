@@ -232,4 +232,8 @@ section {
   color: var(--accent);
   font-weight: 600;
 }
+.article-card:hover {
+  background-color: var(--bg-soft);
+  border-color: var(--accent);
+}
 
