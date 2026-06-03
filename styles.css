@@ -236,4 +236,15 @@ section {
   background-color: var(--bg-soft);
   border-color: var(--accent);
 }
+.card-link, .card-link:visited {
+  text-decoration: none;
+  color: inherit !important;
+  display: block;
+}
+
+.article-card:hover {
+  background-color: var(--bg-soft);
+  border-color: var(--accent);
+}
+
 
