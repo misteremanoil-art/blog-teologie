@@ -306,3 +306,44 @@ section {
   box-shadow: 0 0 20px rgba(56, 189, 248, 0.6); /* EFECTUL DE STRĂLUCIRE (GLOW) */
   transform: scale(1.05);
 }
+/* ACESTA ESTE "GARDA" CARE ȚINE IMAGINEA ÎN CARD */
+.article-image-container {
+  width: 100% !important;
+  height: 200px !important; /* Forțăm înălțimea să nu crească pe toată pagina */
+  overflow: hidden !important; /* Taie tot ce depășește 200px */
+  display: block !important;
+  position: relative;
+}
+
+.article-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important; /* Esențial: decupează, nu întinde! */
+  display: block;
+}
+
+/* Stil pentru Butonul modern și Wow */
+.btn-back {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #38bdf8, #2563eb); /* Gradient WOW */
+  color: white !important;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4); /* Efect de plutire */
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-back:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.6); /* Glow la hover */
+  filter: brightness(1.1);
+}
+
+/* Asigurăm că textele au spațiu sub imagine */
+.article-body {
+  padding: 20px;
+}
