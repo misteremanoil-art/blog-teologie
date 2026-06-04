@@ -445,4 +445,60 @@ section {
   letter-spacing: 1px;
   transform: translateX(5px); /* Ăsta se mișcă la dreapta, indicând "înainte" */
 }
+/* Cardul Principal */
+.article-card {
+  background: #020617;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+/* Containerul de Imagine - Secretul pentru aliniere */
+.article-image-container {
+  width: 100%;
+  height: 200px; /* Toate imaginile vor avea fix 200px înălțime pe Acasă */
+  overflow: hidden;
+}
+
+.article-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Decupează imaginea să umple chenarul fără să o deformeze */
+  transition: transform 0.5s ease;
+}
+
+.article-card:hover .article-img {
+  transform: scale(1.1);
+}
+
+/* Corpul de text sub imagine */
+.article-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.article-header h4 {
+  margin: 0 0 5px 0;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.article-date {
+  font-size: 0.8rem;
+  color: #38bdf8;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.article-excerpt {
+  color: #9ca3af;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
 
