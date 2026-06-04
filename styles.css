@@ -339,3 +339,51 @@ body {
   box-shadow: 0 0 20px rgba(225, 48, 108, 0.4);
   background: rgba(225, 48, 108, 0.1);
 }
+/* --- FIX IMAGINI ȘI TEXT ÎN PAGINA DE ARTICOL --- */
+
+/* Containerul care ține imaginea banner */
+.post-hero-container {
+  width: 100%;
+  height: 400px; /* Înălțime fixă pentru banner */
+  overflow: hidden;
+  border-radius: 20px;
+  margin: 2rem 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Imaginea din interiorul bannerului */
+.post-featured-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Esențial: decupează, nu întinde */
+  display: block;
+}
+
+/* Titlul și textele din articol */
+.post-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: #fff;
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+}
+
+.highlight-text {
+  font-size: 1.2rem;
+  color: #38bdf8; /* Albastru deschis pentru introducere */
+  font-style: italic;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.post-content {
+  font-size: 1.1rem;
+  color: #d1d5db;
+  line-height: 1.8;
+}
+
+.post-content h3 {
+  color: #fff;
+  margin-top: 2.5rem;
+  font-size: 1.5rem;
+}
