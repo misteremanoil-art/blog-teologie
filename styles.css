@@ -405,4 +405,29 @@ section {
   box-shadow: 0 0 35px rgba(56, 189, 248, 0.7);
   filter: brightness(1.2);
 }
+/* BUTONUL WOW UNIVERSAL (Înapoi la Blog) */
+.btn-wow-back {
+  display: inline-block;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 15px 35px;
+  background: linear-gradient(135deg, #38bdf8 0%, #2563eb 100%);
+  color: white !important;
+  text-decoration: none !important;
+  border-radius: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  box-shadow: 0 5px 20px rgba(56, 189, 248, 0.4);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  border: none;
+}
+
+.btn-wow-back:hover {
+  transform: scale(1.05) translateX(-8px); /* Se mișcă puțin la stânga la hover */
+  box-shadow: 0 8px 35px rgba(56, 189, 248, 0.6);
+  filter: brightness(1.1);
+}
 
