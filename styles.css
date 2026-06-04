@@ -531,4 +531,36 @@ section {
   box-shadow: 0 8px 25px rgba(56, 189, 248, 0.5);
   filter: brightness(1.1);
 }
+/* BUTONUL WOW UNIVERSAL PENTRU ARTICOLE */
+.btn-wow-back {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  background: linear-gradient(135deg, #38bdf8 0%, #2563eb 100%);
+  color: white !important;
+  text-decoration: none !important;
+  border-radius: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  box-shadow: 0 5px 20px rgba(56, 189, 248, 0.4);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.btn-wow-back:hover {
+  transform: scale(1.05) translateX(-10px); /* Se mișcă spre stânga */
+  box-shadow: 0 8px 30px rgba(56, 189, 248, 0.6);
+  filter: brightness(1.1);
+}
+
+/* Container pentru a centra sau distanța butonul */
+.post-footer {
+  margin-top: 50px;
+  padding-bottom: 50px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
 
