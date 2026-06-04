@@ -387,3 +387,74 @@ body {
   margin-top: 2.5rem;
   font-size: 1.5rem;
 }
+/* --- OPTIMIZARE MOBIL (RESPONSIVE) --- */
+@media (max-width: 768px) {
+  /* 1. Ajustăm Containerul General */
+  .container {
+    padding: 0 1rem; /* Mai puțin spațiu pe margini pe telefon */
+  }
+
+  /* 2. Header și Meniu */
+  .header-container {
+    flex-direction: column; /* Punem logo-ul deasupra meniului */
+    gap: 15px;
+    padding: 1rem;
+  }
+  
+  .main-nav {
+    gap: 10px;
+    flex-wrap: wrap; /* Meniul se rupe pe două rânduri dacă e nevoie */
+    justify-content: center;
+  }
+
+  /* 3. Hero (Secțiunea de sus) */
+  .premium-hero {
+    padding: 2.5rem 1rem;
+    margin: 1rem 0;
+  }
+
+  .premium-hero h2 {
+    font-size: 1.8rem; /* Text mai mic să nu se rupă urât */
+  }
+
+  .hero-actions {
+    flex-direction: column; /* Butoanele unul sub altul pe mobil */
+    width: 100%;
+  }
+
+  .btn-wow-main, .btn-wow-secondary {
+    width: 100%; /* Butoanele ocupă toată lățimea pentru a fi ușor de apăsat */
+  }
+
+  /* 4. Grid-ul de Articole */
+  .articles-grid {
+    grid-template-columns: 1fr; /* Forțăm un singur card pe rând */
+    gap: 20px;
+  }
+
+  /* 5. Imaginile din Carduri și Articole */
+  .article-image-container, .post-hero-container {
+    height: 180px; /* Înălțime mai mică pentru ecrane mici */
+  }
+
+  /* 6. Textul din Articole */
+  .post-title {
+    font-size: 1.8rem; /* Titlul articolului mai mic pe telefon */
+    line-height: 1.3;
+  }
+
+  .post-content {
+    font-size: 1rem; /* Text mai lizibil pentru citit de aproape */
+  }
+
+  /* 7. Footer și Social Links */
+  .social-links-premium {
+    flex-direction: column; /* Linkurile sociale unul sub altul */
+    width: 100%;
+  }
+  
+  .social-icon {
+    text-align: center;
+    width: 100%;
+  }
+}
