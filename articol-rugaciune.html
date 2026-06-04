@@ -5,17 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rugăciunea - Albert Beniamin</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Stiluri de siguranță aplicate direct pe pagină */
+    .post-hero-container {
+      width: 100%;
+      height: 350px; 
+      overflow: hidden;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    .post-featured-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .post-title { font-size: 2.5rem; color: #ffffff; margin-bottom: 15px; }
+    .post-content { color: #d1d5db; line-height: 1.8; font-size: 1.1rem; }
+    
+    /* BUTONUL WOW - Forțat să apară */
+    .btn-wow-final {
+      display: inline-block;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      padding: 15px 35px;
+      background: linear-gradient(135deg, #38bdf8 0%, #2563eb 100%);
+      color: white !important;
+      text-decoration: none !important;
+      border-radius: 50px;
+      font-weight: 700;
+      text-transform: uppercase;
+      box-shadow: 0 5px 20px rgba(56, 189, 248, 0.4);
+      transition: all 0.3s ease;
+    }
+    .btn-wow-final:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 30px rgba(56, 189, 248, 0.6);
+    }
+    /* Reparare text albastru nedorit */
+    .post-content p { color: #d1d5db !important; } 
+    .highlight-text { color: #38bdf8; font-style: italic; font-size: 1.2rem; }
+  </style>
 </head>
 <body>
   <header class="site-header">
     <div class="header-container">
-      <div class="logo">
-        <h1>Albert Beniamin</h1>
-        <p class="tagline">Reflecții asupra credinței și spiritualității</p>
-      </div>
+      <div class="logo"><h1>Albert Beniamin</h1></div>
       <nav class="main-nav">
         <a href="index.html">Acasă</a>
-        <a href="blog.html" class="active">Blog</a>
+        <a href="blog.html">Blog</a>
         <a href="despre.html">Despre mine</a>
       </nav>
     </div>
@@ -24,24 +62,28 @@
   <main class="container">
     <article class="full-post">
       <div class="post-hero-container">
-        <!-- Imagine reprezentativă: Lumină/Meditație (nu se mai întinde pe tot ecranul) -->
         <img src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&w=1200&q=80" alt="Rugăciunea" class="post-featured-img">
       </div>
 
-      <header class="post-header">
-        <span class="article-date">15 Mai 2026</span>
-        <h1 class="post-title">Rugăciunea ca mijloc de transformare</h1>
-      </header>
+      <h1 class="post-title">Rugăciunea ca mijloc de transformare</h1>
+      <p class="article-date" style="color: #9ca3af; margin-bottom: 25px;">15 Mai 2026</p>
 
       <div class="post-content">
-        <p class="lead-text">Rugăciunea nu este doar o cerere adresată Divinității, ci o stare de prezență. Este spațiul în care omul se întâlnește cu Creatorul său într-un dialog al tăcerii și al ascultării.</p>
+        <p class="highlight-text">Rugăciunea nu este doar o cerere adresată Divinității, ci o stare de prezență...</p>
         
-        <p>Sfinții Părinți descriu rugăciunea ca pe <em>"respirația sufletului"</em>. Fără ea, viața spirituală se usucă și devine un simplu exercițiu intelectual. Transformarea începe atunci când rugăciunea coboară din minte în inimă.</p>
+        <p>Sfinții Părinți descriu rugăciunea ca pe "respirația sufletului". Fără ea, viața spirituală se usucă și devine un simplu exercițiu intelectual. Transformarea începe atunci când rugăciunea coboară din minte în inimă.</p>
         
-        <h3 class="sub-title">Practica tăcerii</h3>
+        <h3 style="color: #ffffff; margin-top: 30px;">Practica tăcerii</h3>
         <p>Într-o lume care vorbește continuu, tăcerea în rugăciune este o formă de asceză. În această liniște, Dumnezeu începe să lucreze asupra caracterului nostru, șlefuind colțurile aspre ale ego-ului și umplându-ne de o pace care întrece orice înțelegere.</p>
-        
-        <p>Prin rugăciune, nu îl schimbăm pe Dumnezeu, ci rugăciunea ne schimbă pe noi. Ne face mai receptivi la har și mai atenți la nevoile celor de lângă noi, transformând viața interioară într-o oglindă a luminii divine.</p>
       </div>
 
-      <div class="post-foot
+      <!-- BUTONUL ESTE AICI -->
+      <a href="blog.html" class="btn-wow-final">← Înapoi la Blog</a>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Albert Beniamin. Toate drepturile rezervate.</p>
+  </footer>
+</body>
+</html>
