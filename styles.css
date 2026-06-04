@@ -501,4 +501,34 @@ section {
   margin-bottom: 20px;
   line-height: 1.6;
 }
+/* Face ca tot cardul să fie clicabil fără să strice designul */
+.card-link {
+  text-decoration: none !important; /* Scoate sublinierea */
+  display: block;
+  color: inherit; /* Păstrează culorile textului din card */
+}
+
+/* Ajustăm butonul vizual (acum e div, nu mai e a) */
+.btn-read-more {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 25px;
+  border-radius: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  background: linear-gradient(135deg, #38bdf8 0%, #2563eb 100%);
+  color: white;
+  margin-top: auto;
+  transition: all 0.3s ease;
+}
+
+/* Efect de hover pe tot cardul care activează și butonul */
+.card-link:hover .btn-read-more {
+  transform: scale(1.05) translateX(8px);
+  box-shadow: 0 8px 25px rgba(56, 189, 248, 0.5);
+  filter: brightness(1.1);
+}
 
