@@ -447,14 +447,31 @@ body {
     font-size: 1rem; /* Text mai lizibil pentru citit de aproape */
   }
 
-  /* 7. Footer și Social Links */
+    /* 7. REPARARE BUTOANE SOCIALE PE MOBIL */
   .social-links-premium {
-    flex-direction: column; /* Linkurile sociale unul sub altul */
+    display: flex;
+    flex-direction: column; /* Le punem unul sub altul */
+    align-items: center;    /* Le centrăm perfect */
+    gap: 12px;
     width: 100%;
+    padding: 0;
+    margin: 20px 0;
   }
   
   .social-icon {
+    width: 100%;            /* Ocupă lățimea containerului */
+    max-width: 280px;       /* Dar nu le lăsăm să devină gigantice */
     text-align: center;
-    width: 100%;
+    display: block;
+    box-sizing: border-box; /* Asigură că padding-ul nu scoate butonul afară */
+    margin: 0 auto;         /* Centrare forțată */
   }
-}
+
+  /* Ajustare Footer pentru a cuprinde butoanele */
+  .site-footer {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
