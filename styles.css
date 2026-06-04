@@ -430,4 +430,19 @@ section {
   box-shadow: 0 8px 35px rgba(56, 189, 248, 0.6);
   filter: brightness(1.1);
 }
+/* Butonul de "Citește mai mult" de pe Homepage */
+.read-more {
+  display: inline-block;
+  color: #38bdf8 !important;
+  font-weight: 700;
+  text-decoration: none;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+}
+
+.read-more:hover {
+  color: #ffffff !important;
+  letter-spacing: 1px;
+  transform: translateX(5px); /* Ăsta se mișcă la dreapta, indicând "înainte" */
+}
 
