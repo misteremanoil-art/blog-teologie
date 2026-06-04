@@ -347,3 +347,62 @@ section {
 .article-body {
   padding: 20px;
 }
+/* Stiluri pentru Pagina de Articol */
+.post-hero-container {
+  width: 100%;
+  max-height: 400px; /* Limitează înălțimea imaginii */
+  overflow: hidden;
+  border-radius: 20px;
+  margin: 2rem 0;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+
+.post-featured-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Decupează imaginea frumos */
+}
+
+.post-title {
+  font-size: 2.8rem;
+  color: #fff;
+  margin-top: 0.5rem;
+  line-height: 1.2;
+}
+
+.lead-text {
+  font-size: 1.25rem;
+  color: #38bdf8;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.sub-title {
+  color: #fff;
+  margin-top: 2rem;
+  font-size: 1.6rem;
+}
+
+/* BUTONUL WOW FINAL */
+.btn-wow {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 3rem;
+  padding: 15px 30px;
+  background: linear-gradient(135deg, #38bdf8 0%, #2563eb 100%);
+  color: white !important;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.btn-wow:hover {
+  transform: scale(1.05) translateX(-10px);
+  box-shadow: 0 0 35px rgba(56, 189, 248, 0.7);
+  filter: brightness(1.2);
+}
+
