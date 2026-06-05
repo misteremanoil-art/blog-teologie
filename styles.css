@@ -601,3 +601,105 @@ body {
     }
 }
 
+/* Magazine Style - Varianta Clean */
+.magazine-article {
+  padding: 2rem 0;
+}
+
+.category-tag {
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  border-bottom: 1px solid var(--border);
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.main-title {
+  font-size: 2.8rem;
+  line-height: 1.1;
+  margin: 0.5rem 0;
+  font-weight: 700;
+}
+
+.sub-title {
+  font-size: 1.5rem;
+  color: var(--muted);
+  font-style: italic;
+  font-weight: normal;
+  margin-bottom: 1.5rem;
+}
+
+.post-meta {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 2rem;
+}
+
+.article-image-full {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 2.5rem;
+}
+
+.intro-box {
+  background-color: var(--bg-soft);
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  border-left: 4px solid var(--accent);
+}
+
+.highlight-quote {
+  font-size: 1.6rem;
+  font-style: italic;
+  text-align: center;
+  margin: 3rem 0;
+  padding: 2rem;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+}
+
+.summary-card {
+  background-color: var(--bg-soft);
+  padding: 2.5rem;
+  border-radius: 16px;
+  margin-top: 4rem;
+  border: 1px solid var(--border);
+}
+
+.cta-box {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 1rem;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+}
+
+.author-info {
+  margin-top: 4rem;
+  text-align: right;
+  font-style: italic;
+  color: var(--muted);
+}
+
+/* Fix pentru drop-cap (litera mare) */
+.drop-cap::first-letter {
+  font-size: 3.5rem;
+  float: left;
+  margin-right: 8px;
+  line-height: 1;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .main-title { font-size: 2rem; }
+  .sub-title { font-size: 1.2rem; }
+}
