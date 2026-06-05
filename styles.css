@@ -557,4 +557,47 @@ body {
     .sub-title { font-size: 1.3rem; }
     .magazine-columns { column-count: 1; }
 }
+/* Stiluri pentru Vizualizatorul PDF */
+.pdf-viewer-container {
+    margin: 2rem 0;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #333; /* Fundal sub PDF */
+}
+
+.pdf-intro {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.action-bar {
+    margin-top: 2rem;
+}
+
+.hint {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+.quick-summary {
+    background-color: var(--bg-soft);
+    padding: 2rem;
+    border-radius: 12px;
+    margin: 3rem 0;
+}
+
+.quick-summary ul {
+    padding-left: 1.5rem;
+    color: var(--muted);
+}
+
+/* Ajustare pe Mobil */
+@media (max-width: 768px) {
+    .pdf-viewer-container {
+        height: 500px; /* Mai mic pe telefon pentru a nu bloca scroll-ul paginii */
+    }
+}
 
