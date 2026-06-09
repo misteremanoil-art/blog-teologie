@@ -3,121 +3,144 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Albert Beniamin - Blog de Teologie</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Blog Teologie • Albert Beniamin</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      margin: 0;
+      background-color: #f8f7f4;
+      color: #222;
+      line-height: 1.7;
+    }
+    header {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 35px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: #111;
+      text-decoration: none;
+    }
+    nav a {
+      margin-left: 28px;
+      color: #444;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 30px auto 60px;
+      padding: 0 20px;
+    }
+    .hero {
+      text-align: center;
+      margin-bottom: 70px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: #111;
+    }
+    .hero p {
+      font-size: 1.15rem;
+      color: #555;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    .articles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 45px;
+    }
+    .article-card {
+      background: #fff;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+      transition: box-shadow 0.2s ease;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    .article-card:hover {
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    }
+    .article-image {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      background-color: #eee;
+    }
+    .article-content {
+      padding: 26px 24px;
+    }
+    .article-content h2 {
+      font-size: 1.45rem;
+      margin: 0 0 14px 0;
+      line-height: 1.35;
+      color: #111;
+    }
+    .article-content p {
+      color: #555;
+      font-size: 0.98rem;
+      margin: 0;
+    }
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="header-container">
-      <div class="logo">
-        <h1>Albert Beniamin</h1>
-        <p class="tagline">Reflecții asupra credinței și spiritualității</p>
-      </div>
-      <nav class="main-nav">
-        <a href="index.html" class="nav-link active">Acasă</a>
-        <a href="blog.html" class="nav-link">Blog</a>
-        <a href="despre.html" class="nav-link">Despre mine</a>
-      </nav>
-    </div>
+
+  <header>
+    <a href="index.html" class="logo">Albert Beniamin</a>
+    <nav>
+      <a href="blog.html">Articole</a>
+      <a href="despre.html">Despre</a>
+    </nav>
   </header>
 
-  <main class="container">
-    <section class="premium-hero">
-  <div class="hero-tag">Teologie & Spiritualitate</div>
-  <h2>Bun venit pe blogul meu</h2>
-  <p>Aici scriu despre teologie, interpretări biblice, viață spirituală și aplicații practice ale credinței în cotidian.</p>
-  <div class="hero-actions">
-    <a href="blog.html" class="btn-wow-main">Citește toate articolele</a>
-  </div>
-</section>
+  <div class="container">
 
+    <!-- Hero Section -->
+    <div class="hero">
+      <h1>Blog de Teologie</h1>
+      <p>Reflecții, studii și gânduri despre credință, Scriptură și viața creștină.</p>
+    </div>
 
+    <!-- Articole -->
+    <div class="articles-grid">
 
-    <section class="featured-articles">
-      <h3>Articole recente</h3>
-      <div class="articles-grid">
+      <a href="articol-esenta-credintei.html" class="article-card">
+        <img src="https://picsum.photos/id/1015/600/300" class="article-image" alt="">
+        <div class="article-content">
+          <h2>Esenta credinței creștine</h2>
+          <p>O privire asupra fundamentelor credinței și ce înseamnă să crezi cu adevărat.</p>
+        </div>
+      </a>
 
-        <!-- ARTICOLUL 1 -->
-        <a href="articol-esenta-credintei.html" class="card-link">
-          <article class="article-card">
-            <div class="article-image-container">
-              <img src="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?auto=format&fit=crop&w=500&q=80" alt="Esența credinței" class="article-img">
-            </div>
-            <div class="article-body">
-              <div class="article-header">
-                <h4>Esența credinței în vremurile moderne</h4>
-              </div>
-              <p class="article-excerpt">Cum putem menține o credință autentică și profundă în lumea contemporană, cu toate provocările actuale?</p>
-            </div>
-          </article>
-        </a>
+      <a href="articol-epistole-pauline.html" class="article-card">
+        <img src="https://picsum.photos/id/1005/600/300" class="article-image" alt="">
+        <div class="article-content">
+          <h2>Epistolele pauline</h2>
+          <p>Un studiu asupra mesajului apostolic și relevanța lui pentru biserica de astăzi.</p>
+        </div>
+      </a>
 
-        <!-- ARTICOLUL 2 -->
-        <a href="articol-epistole-pauline.html" class="card-link">
-          <article class="article-card">
-            <div class="article-image-container">
-              <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=500&q=80" alt="Epistole pauline" class="article-img">
-            </div>
-                        <div class="article-body">
-              <div class="article-header">
-                <h4>Interpretarea epistolelor pauline</h4>
-              </div>
-              <p class="article-excerpt">O analiză detaliată a mesajelor apostolului Pavel și relevanța lor pentru viața creștinului de astăzi.</p>
-            </div>
-          </article>
-        </a>
-
-        <!-- ARTICOLUL 3 -->
-        <a href="articol-rugaciune.html" class="card-link">
-          <article class="article-card">
-            <div class="article-image-container">
-              <img src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&w=1200&q=80" alt="Rugăciunea" class="article-img">
-            </div>
-            <div class="article-body">
-              <div class="article-header">
-                <h4>Rugăciunea ca mijloc de transformare</h4>
-              </div>
-              <p class="article-excerpt">Puterea rugăciunii și cum aceasta ne poate schimba în profunzime. O explorare a practicilor spirituale tradiționale.</p>
-            </div>
-          </article>
-        </a>
-
-      </div>
-    </section>
-
-    <!-- Secțiunea Despre Blog (Preview) PREMIUM -->
-<section class="about-premium-box">
-  <div class="about-content">
-    <h3>Despre acest blog</h3>
-    <p>Acest spațiu este dedicat explorării profunde a teologiei creștine și a impactului acesteia asupra vieții noastre zilnice. Voi publica eseuri, exegeze, reflecții personale și recomandări de lectură inspiratoare.</p>
-    <a href="despre.html" class="btn-wow-secondary">Află mai mult despre mine</a>
-  </div>
-</section>
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="footer-content">
-      <p>&copy; 2026 Albert Beniamin. Toate drepturile rezervate.</p>
-      <div class="social-links-premium">
-  <!-- WhatsApp -->
-  <a href="https://wa.me/numarultau" target="_blank" class="social-icon wa" title="WhatsApp">
-    <span>WhatsApp</span>
-  </a>
-  
-  <!-- Facebook -->
-  <a href="https://facebook.com/numarultau" target="_blank" class="social-icon fb" title="Facebook">
-    <span>Facebook</span>
-  </a>
-  
-  <!-- Instagram -->
-  <a href="https://instagram.com/numarultau" target="_blank" class="social-icon ig" title="Instagram">
-    <span>Instagram</span>
-  </a>
-</div>
+      <a href="articol-rugaciune.html" class="article-card">
+        <img src="https://picsum.photos/id/106/600/300" class="article-image" alt="">
+        <div class="article-content">
+          <h2>Puterea rugăciunii</h2>
+          <p>Despre ce înseamnă cu adevărat să te rogi și cum ne transformă rugăciunea.</p>
+        </div>
+      </a>
 
     </div>
-  </footer>
+
+  </div>
+
 </body>
 </html>
-
